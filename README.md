@@ -1,5 +1,3 @@
-Aquí tienes tu README refactorizado. He aplicado un enfoque agnóstico, he ajustado el código de presentación para reflejar tu rol como colaborador clave en la arquitectura y he actualizado tu stack y proyectos (como *Pendie*) para mostrar la verdadera amplitud de tu perfil tecnológico.
-
 # Alejandro Trejo
 
 `Senior Frontend Engineer · Software Architecture Collaborator`
