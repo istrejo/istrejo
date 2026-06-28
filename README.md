@@ -60,7 +60,7 @@ Ya sea utilizando ecosistemas web modernos o soluciones móviles multiplataforma
 
 ## `Connect`
 
-[→ Portfolio](https://github.com/istrejo/trejodev) · [LinkedIn](https://linkedin.com/in/istrejo) · istrejo2106@gmail.com
+[→ Portfolio]([https://github.com/istrejo/trejodev](https://trejodev.web.app/)) · [LinkedIn](https://linkedin.com/in/istrejo) · istrejo2106@gmail.com
 
 ---
 
