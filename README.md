@@ -19,17 +19,14 @@ I use this profile as a working portfolio: projects first, claims second. The re
 ## Projects and resources
 
 <!-- FEATURED_REPOS:START -->
-
 <!-- This section is automatically generated. Tag repositories with `featured` or `open-source` to make them appear here. -->
-
 ### Featured projects
 
-*No repositories tagged with `featured` yet.*
+_No repositories tagged with `featured` yet._
 
 ### Open source / resources
 
-*No repositories tagged with `open-source` yet.*
-
+_No repositories tagged with `open-source` yet._
 <!-- FEATURED_REPOS:END -->
 
 ---
