@@ -26,7 +26,7 @@ _No repositories tagged with `featured` yet._
 
 ### Open source / resources
 
-_No repositories tagged with `open-source` yet._
+- [obsidian-mcp](https://github.com/istrejo/obsidian-mcp) — MCP server for Obsidian vaults via direct filesystem access. Works with Claude Desktop and Claude Code. · TypeScript · Updated Jul 2026
 <!-- FEATURED_REPOS:END -->
 
 ---
