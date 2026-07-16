@@ -1,193 +1,162 @@
-# Pendie
+<div align="center">
 
-A cross-platform productivity application for planning daily work, building habits, and protecting focus time from a single mobile experience.
+# Alejandro Trejo
 
-Pendie is built with modern Angular and Ionic architecture: standalone components, zoneless change detection, Signals, NgRx SignalStore, lazy routes, Supabase, and native authentication through Capacitor.
+### Frontend-focused Software Developer
 
-> **Project status:** Active product development. The repository is public as an engineering portfolio and does not include private Supabase credentials or production data.
+Building scalable web and mobile products with **Angular, React, Ionic, NestJS, and TypeScript**.
 
-## Product areas
+[Portfolio](https://trejodev.web.app/) ·
+[LinkedIn](https://linkedin.com/in/alejandrotrejodev) ·
+[Email](mailto:istrejo2106@gmail.com)
 
-### Today
+</div>
 
-- Daily task planning.
-- Subtasks, notes, priorities, and recurring frequencies.
-- Calendar context for the current day.
-- Google Calendar event integration.
+---
 
-### Habits
+## About me
 
-- Habit creation and progress tracking.
-- Categories such as Health, Work, Study, Finance, and Mindfulness.
-- Custom schedules and daily reminders.
-- Weekly progress visualization.
+Software developer with **4+ years of experience** building web and mobile applications for distributed teams across Latin America and the United States.
 
-### Focus
+My strongest background is frontend development with Angular, React, TypeScript, reactive state management, component architecture, and cross-platform mobile applications. I am also expanding my full-stack ownership through NestJS, Prisma, PostgreSQL, authentication, authorization, and multi-tenant SaaS architecture.
 
-- Pomodoro focus and break sessions.
-- Configurable durations.
-- Long-break intervals.
-- Optional automatic session transitions.
+I care about maintainable systems, clear technical decisions, product usability, performance, and turning business workflows into reliable software.
 
-### Settings and account
+- Based in Tenerife, Spain.
+- Open to Frontend Developer, Angular Developer, React Developer, and Software Developer opportunities.
+- Available for remote roles and hybrid opportunities in Tenerife.
+- Currently documenting my transition from frontend-focused development into full-stack product engineering.
 
-- Light, dark, and monochrome themes.
+---
+
+## Selected work
+
+### RacerLab — Workshop management SaaS
+
+A product initiative for mechanical workshops that connects customers, vehicles, service orders, diagnoses, quotations, repairs, technicians, evidence, and inventory in one traceable workflow.
+
+**Repositories:** [API](https://github.com/istrejo/racerlab-api) · [Web](https://github.com/istrejo/racerlab-web)
+
+**What I am building**
+
+- A NestJS REST API with Prisma and PostgreSQL.
+- Secure authentication with JWT access tokens and opaque refresh tokens in `HttpOnly` cookies.
+- Refresh-session rotation, Argon2 password hashing, logout, and global session revocation.
+- Role-based authorization with guards, decorators, and protected user-management endpoints.
+- Swagger/OpenAPI documentation, global validation, health checks, and database migrations.
+- An Angular client with Signals, functional guards, functional interceptors, lazy routing, and startup session restoration.
+- A workshop-based multi-tenant architecture with memberships, invitations, role-scoped access, and isolated operational data.
+
+**Stack:** Angular 22, NestJS 11, TypeScript, Prisma, PostgreSQL, Supabase, Swagger, JWT, Argon2, Tailwind CSS, Vitest
+
+---
+
+### Pendie — Cross-platform productivity app
+
+A mobile productivity product for planning daily work, building habits, managing calendar context, and protecting focus time with Pomodoro sessions.
+
+**Repository:** [pendie](https://github.com/istrejo/pendie)
+
+**Technical highlights**
+
+- Angular standalone architecture with zoneless change detection.
+- Signals-first local state and NgRx SignalStore for cross-route state.
+- Ionic and Capacitor for iOS, Android, and browser delivery.
+- Supabase authentication and persisted application data.
+- Email/password, Google, and Apple authentication flows.
 - English and Spanish localization.
-- Email/password authentication.
-- Google OAuth and Apple Sign-In.
-- Password recovery and email-confirmation flows.
-- Calendar and account settings.
+- Lazy routes, modern Angular control flow, OnPush components, and reactive forms.
 
-## Architecture highlights
+**Stack:** Angular 20, Ionic 8, Capacitor 8, NgRx Signals, Supabase, RxJS, SCSS, ngx-translate
 
-- **Standalone Angular:** no feature `NgModule` dependencies.
-- **Zoneless change detection:** configured with `provideZonelessChangeDetection()`.
-- **Signals-first UI:** `signal()`, `computed()`, and `effect()` for local reactive state.
-- **Shared state:** NgRx SignalStore for state used across routes.
-- **Modern component APIs:** `input()`, `output()`, and `model()`.
-- **Modern template control flow:** `@if`, `@for`, and `@switch`.
-- **Lazy routing:** routed screens load through `loadComponent`.
-- **OnPush components:** explicit and predictable rendering boundaries.
-- **Backend as a service:** Supabase authentication and persisted application data.
-- **Cross-platform runtime:** Capacitor projects for iOS and Android.
+---
 
-## Tech stack
+### EzeeGoing Mobile — Reservation management
 
-| Area | Technology |
-|---|---|
-| Framework | Angular 20, standalone and zoneless |
-| Mobile UI | Ionic 8 |
-| Native runtime | Capacitor 8 |
-| Backend | Supabase |
-| Shared state | NgRx Signals / SignalStore |
-| Local state | Angular Signals |
-| Forms | Angular Reactive Forms |
-| Authentication | Supabase Auth, Google Sign-In, Apple Sign-In |
-| Internationalization | ngx-translate, English and Spanish |
-| Date utilities | FormKit Tempo |
-| Testing | Jasmine, Karma |
+A hybrid mobile application for managing reservations in residential buildings, parking areas, and shared spaces.
 
-## Project structure
+**Repository:** [ezeegoing-mobile](https://github.com/istrejo/ezeegoing-mobile)
 
-```text
-src/app/
-├── core/
-│   ├── constants/
-│   ├── guards/
-│   ├── interceptors/
-│   ├── models/
-│   └── services/
-│       ├── auth/
-│       ├── calendar/
-│       ├── categories/
-│       ├── habits/
-│       ├── language/
-│       ├── profiles/
-│       ├── tasks/
-│       └── theme/
-├── pages/
-│   ├── auth/
-│   ├── habits/
-│   ├── pomodoro/
-│   ├── settings/
-│   ├── tabs/
-│   └── today/
-├── shared/
-│   └── components/
-└── store/
-    ├── auth.store.ts
-    ├── calendar.store.ts
-    ├── habits.store.ts
-    ├── pomodoro.store.ts
-    └── tasks.store.ts
-```
+**Technical highlights**
 
-## State-management rule
+- Centralized state with NgRx Store and Effects.
+- Typed API access and JWT-based session handling.
+- Native Apple Wallet pass integration through Capacitor.
+- Eligibility rules that prevent expired or inactive reservations from being added to Wallet.
+- Shared Angular/Ionic codebase for iOS, Android, and the browser.
+- Reusable components and feature-oriented application structure.
 
-Pendie uses a simple ownership rule to avoid unnecessary global state:
+**Stack:** Angular 18, Ionic 8, Capacitor 7, NgRx, Tailwind CSS, PrimeNG, Jasmine, Karma
 
-- State shared across routes belongs in a SignalStore.
-- State owned by a single screen or component stays in Angular Signals.
-- Services coordinate data access and integrations; UI components consume reactive state.
+---
 
-This keeps state boundaries explicit while preserving a Signals-first development model.
+### Obsidian MCP — Open-source developer tool
 
-## What this project demonstrates
+An MCP server that connects Claude Desktop and Claude Code to an Obsidian vault through direct filesystem access.
 
-- Applying current Angular APIs in a real mobile product.
-- Designing a scalable feature and state structure.
-- Combining web UI, native capabilities, authentication, and cloud persistence.
-- Supporting iOS, Android, English, Spanish, and multiple themes from one codebase.
-- Separating local UI state from cross-route application state.
-- Building a product beyond a tutorial or isolated technical demo.
+**Repository:** [obsidian-mcp](https://github.com/istrejo/obsidian-mcp) · [npm package](https://www.npmjs.com/package/@istrejo/obsidian-mcp)
 
-## Getting started
+**Technical highlights**
 
-### Prerequisites
+- Tools for reading, creating, updating, searching, moving, and organizing notes.
+- Path-traversal prevention and vault-boundary validation.
+- Optional read-only mode.
+- Automatic backups before destructive operations.
+- Published as a reusable npm package with CI.
 
-- Node.js 20+
-- Angular CLI
-- Ionic CLI
-- Xcode for iOS development
-- Android Studio for Android development
-- A Supabase project
+**Stack:** TypeScript, Node.js, Model Context Protocol, npm, GitHub Actions
 
-### Installation
+---
 
-```bash
-git clone https://github.com/istrejo/pendie.git
-cd pendie
-npm install
-```
+## Experience highlights
 
-Create `src/environments/environment.ts` with your own Supabase project values:
+- Contributed to an architecture of **7 micro frontends** across Angular and React using Webpack Module Federation.
+- Improved application performance with reductions in loading times of up to **80%**.
+- Helped increase a production application's Lighthouse score from approximately **50 to 90**.
+- Built web and mobile products with Angular, Ionic, Capacitor, React, and React Native.
+- Worked with distributed teams across Venezuela, Chile, Costa Rica, and the United States.
+- Designed reusable component systems and documented UI components with Storybook.
+- Integrated native mobile capabilities, cloud services, authentication flows, and state-management architectures.
 
-```typescript
-export const environment = {
-  production: false,
-  supabaseUrl: 'YOUR_SUPABASE_URL',
-  supabaseKey: 'YOUR_SUPABASE_ANON_KEY',
-};
-```
+---
 
-Run in the browser:
+## Technologies
 
-```bash
-npm start
-# or
-ionic serve
-```
+**Frontend**
 
-Run on a device or emulator:
+`Angular` · `React` · `TypeScript` · `JavaScript` · `RxJS` · `Angular Signals` · `NgRx` · `Redux` · `SignalStore`
 
-```bash
-ionic capacitor run ios
-ionic capacitor run android
-```
+**Mobile**
 
-Build and synchronize native projects:
+`Ionic` · `Capacitor` · `React Native` · `iOS` · `Android`
 
-```bash
-npm run build
-ionic capacitor sync
-```
+**Backend and data**
 
-Run tests:
+`NestJS` · `Prisma` · `PostgreSQL` · `Supabase` · `Firebase` · `REST APIs` · `Swagger/OpenAPI`
 
-```bash
-npm test
-```
+**Architecture and UI**
 
-## Native application ID
+`Micro Frontends` · `Module Federation` · `Standalone Components` · `Tailwind CSS` · `PrimeNG` · `Storybook` · `SCSS`
 
-```text
-com.istrejo.pendie
-```
+**Testing and delivery**
 
-## Security note
+`Jasmine` · `Karma` · `Jest` · `Vitest` · `React Testing Library` · `Git` · `Docker` · `GitHub Actions`
 
-Only public Supabase client configuration belongs in the frontend environment. Service-role keys, private OAuth secrets, production data, and server-side credentials must never be committed.
+---
 
-## License
+## Current focus
 
-This repository is shared for portfolio and evaluation purposes. No permission is granted for production reuse unless explicitly stated otherwise.
+- Building RacerLab as a real SaaS product and full-stack engineering case study.
+- Developing modern Angular applications with Signals and standalone architecture.
+- Strengthening backend architecture, authorization, data modelling, and multi-tenancy with NestJS.
+- Improving English for international engineering teams.
+- Sharing practical development lessons and open-source tools.
+
+---
+
+## Contact
+
+- [LinkedIn](https://linkedin.com/in/alejandrotrejodev)
+- [Portfolio](https://trejodev.web.app/)
+- [GitHub](https://github.com/istrejo)
+- [istrejo2106@gmail.com](mailto:istrejo2106@gmail.com)
