@@ -26,7 +26,7 @@ I am also expanding my experience in backend development, API design, authentica
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=angular,react,ionic,ts,js,html,css,tailwind,sass,redux,nestjs,nodejs,postgres,prisma,supabase,firebase,docker,git,github,jest,storybook,gcp" />
+<img src="https://skillicons.dev/icons?i=angular,react, nestjs,nodejs,ts,js,html,css,tailwind,sass,redux,postgres,prisma,supabase,firebase,docker,git,github,jest,gcp" />
 
 </div>
 
