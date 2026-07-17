@@ -8,7 +8,7 @@ I build scalable web and mobile applications for distributed teams.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alejandro_Trejo-0A66C2?style=flat-square\&logo=linkedin)](https://linkedin.com/in/alejandrotrejodev)
 [![GitHub](https://img.shields.io/badge/GitHub-istrejo-181717?style=flat-square\&logo=github)](https://github.com/istrejo)
-[![Porfolio](https://img.shields.io/badge/any_text-you_like-blue)](https://trejodev.web.app/en)
+[![Porfolio](https://img.shields.io/badge/Portfolio_like-blue)](https://trejodev.web.app/en)
 
 📍 Tenerife, Spain
 
